@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Category Details — SAF International Trading & Sourcing</title>
+  <meta name="description" content="Explore category specifications, curated products, bulk pricing tiers, and custom branding applications at SAF International.">
+  
+  <!-- Google Fonts: Playfair Display & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="assets/css/variables.css">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/pages.css">
+</head>
+<body id="category-detail-view">
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo" aria-label="SAF International Homepage">
+        <img src="assets/images/logo.png" alt="SAF International Trading & Sourcing" height="38">
+      </a>
+
+      <nav class="nav-menu" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="products.html" class="nav-link active">Products</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="collections.html" class="nav-link">Collections</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="btn btn-gold" onclick="Modal.openQuote()">Request a Quote</button>
+        <button class="mobile-toggle" aria-label="Open Mobile Menu" onclick="document.getElementById('mobile-nav-drawer').classList.toggle('active')">
+          &#9776;
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div id="mobile-nav-drawer" style="display: none; position: fixed; top: 72px; left: 0; width: 100%; background: #FAF8F5; border-bottom: 1px solid var(--color-border); padding: 24px; z-index: 999; flex-direction: column; gap: 16px;">
+    <a href="index.html" class="nav-link">Home</a>
+    <a href="about.html" class="nav-link">About Us</a>
+    <a href="products.html" class="nav-link active">Products</a>
+    <a href="services.html" class="nav-link">Services</a>
+    <a href="collections.html" class="nav-link">Collections</a>
+    <button class="btn btn-gold" onclick="Modal.openQuote()" style="margin-top: 10px;">Request a Quote</button>
+  </div>
+
+  <main>
+    <!-- Category Header Banner -->
+    <section class="page-header-banner">
+      <div class="container">
+        <nav class="breadcrumbs">
+          <a href="index.html">Home</a>
+          <span>/</span>
+          <a href="products.html">Categories</a>
+          <span>/</span>
+          <span class="current" id="crumb-category-title">Corporate Gifts</span>
+        </nav>
+        <div class="eyebrow eyebrow-pill" id="cat-detail-badge">01 &bull; CORPORATE</div>
+        <h1 class="section-headline" id="cat-detail-title">Corporate Gifts</h1>
+        <p class="section-desc" id="cat-detail-desc">
+          Premium and practical gifts for employees, clients, partners, and corporate occasions.
+        </p>
+      </div>
+    </section>
+
+    <!-- Category Showcase & Products -->
+    <section class="section" style="padding-top: 0;">
+      <div class="container">
+        
+        <!-- Category Sub-classifications -->
+        <div style="background: #FFFFFF; border: 1px solid var(--color-border); border-radius: var(--radius-md); padding: 24px 28px; margin-bottom: 40px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px;">
+          <div>
+            <div style="font-size: 0.6875rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--color-primary-gold); margin-bottom: 4px;">
+              CURATED SUB-SEGMENTS
+            </div>
+            <div id="cat-subcategories-list" style="display: flex; gap: 10px; flex-wrap: wrap;">
+              <!-- Populated by JS -->
+            </div>
+          </div>
+          <div>
+            <button class="btn btn-gold" id="cat-inquire-btn" onclick="Modal.openQuote()">
+              Inquire This Category &rarr;
+            </button>
+          </div>
+        </div>
+
+        <!-- Products in Category -->
+        <div class="section-header-flex">
+          <div>
+            <div class="eyebrow">PORTFOLIO ITEMS</div>
+            <h2 class="section-headline" style="font-size: 1.875rem;">Selected Items in This Category</h2>
+          </div>
+          <div>
+            <a href="products.html" class="btn-text-gold">VIEW FULL CATALOG &rarr;</a>
+          </div>
+        </div>
+
+        <div class="product-grid" id="cat-products-grid">
+          <!-- Populated by JS -->
+        </div>
+
+        <!-- Custom Sourcing Callout Box -->
+        <div class="callout-box" style="margin-top: 56px;">
+          <div>
+            <h3 class="callout-title">Need specialized custom specifications for this category?</h3>
+            <p class="callout-desc">Our sourcing team can engineer custom packaging, custom materials, and PMS pantone finishes tailored to your enterprise identity.</p>
+          </div>
+          <div>
+            <button class="btn btn-dark" onclick="Modal.openQuote('Category Custom Manufacturing', 'Category Custom')">
+              Discuss Custom Sourcing &rarr;
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Dark Corporate Gifting Banner -->
+    <section class="section dark-section">
+      <div class="container">
+        <div class="eyebrow">CORPORATE PROCUREMENT</div>
+        <h2 class="section-headline">Institutional Supply &amp; Guaranteed Compliance</h2>
+        <p class="section-desc">
+          Every order within this category is verified for bilateral trade compliance, SGS quality assurance, and dedicated batch inspection prior to shipping.
+        </p>
+
+        <div class="dark-feature-grid">
+          <div class="dark-feature-card">
+            <div class="dark-feature-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="8" r="7"></circle>
+                <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+              </svg>
+            </div>
+            <h3 class="dark-feature-title">Audited Facilities</h3>
+            <p class="dark-feature-desc">All products sourced from ISO 9001 and SMETA ethically audited manufacturing partners.</p>
+          </div>
+
+          <div class="dark-feature-card">
+            <div class="dark-feature-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+            </div>
+            <h3 class="dark-feature-title">Pre-Production Proofs</h3>
+            <p class="dark-feature-desc">Receive digital vector renders within 48 hours and physical prototypes for sign-off.</p>
+          </div>
+
+          <div class="dark-feature-card">
+            <div class="dark-feature-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="1" y="3" width="15" height="13"></rect>
+                <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
+                <circle cx="5.5" cy="18.5" r="2.5"></circle>
+                <circle cx="18.5" cy="18.5" r="2.5"></circle>
+              </svg>
+            </div>
+            <h3 class="dark-feature-title">Container Fulfillment</h3>
+            <p class="dark-feature-desc">Full container FCL and consolidated LCL freight handling with complete customs clearance.</p>
+          </div>
+
+          <div class="dark-feature-card">
+            <div class="dark-feature-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+            </div>
+            <h3 class="dark-feature-title">Zero-Defect Standard</h3>
+            <p class="dark-feature-desc">Rigorous AQL 2.5 pre-shipment batch inspection ensuring pristine brand representation.</p>
+          </div>
+        </div>
+
+        <div class="dark-section-actions">
+          <button class="btn btn-gold" onclick="Modal.openQuote()">
+            Request Official Quotation
+          </button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div>
+          <h4 class="font-serif" style="font-size: 1.25rem; font-weight: 700; color: var(--color-text-title); margin-bottom: 12px;">
+            SAF International
+          </h4>
+          <p style="line-height: 1.6; color: var(--color-text-body); max-width: 260px;">
+            A global trading and sourcing company connecting businesses with gifts, corporate merchandise, stationery, household products, handicrafts, and lifestyle products.
+          </p>
+        </div>
+
+        <div>
+          <div class="footer-col-title">PRODUCTS</div>
+          <ul class="footer-links-list">
+            <li><a href="category-details.html?id=corporate-gifts">Corporate Gifts</a></li>
+            <li><a href="category-details.html?id=gift-items">Gift Items</a></li>
+            <li><a href="category-details.html?id=stationery">Stationery</a></li>
+            <li><a href="category-details.html?id=household">Household</a></li>
+            <li><a href="category-details.html?id=handicrafts">Handicrafts</a></li>
+            <li><a href="category-details.html?id=promotional-products">Promotional Products</a></li>
+            <li><a href="category-details.html?id=bags-accessories">Bags &amp; Accessories</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-col-title">BUSINESS &amp; SOURCING</div>
+          <ul class="footer-links-list">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="collections.html">Collections</a></li>
+            <li><a href="products.html?category=corporate-gifts">Corporate Gifts</a></li>
+            <li><a href="services.html#industries">Industries</a></li>
+            <li><a href="services.html#process">Sourcing Process</a></li>
+            <li><a href="about.html#news">News &amp; Insights</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-col-title">CLIENT SUPPORT</div>
+          <ul class="footer-links-list">
+            <li><a href="quote.html">Request a Quote</a></li>
+            <li><a href="quote.html#inquiry">Product Inquiry</a></li>
+            <li><a href="services.html#branding">Custom Branding</a></li>
+            <li><a href="about.html#faq">FAQ</a></li>
+            <li><a href="services.html#terms">Terms of Trade</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-col-title">OFFICIAL CREDENTIALS</div>
+          <div class="footer-credential-box">
+            <div class="footer-credential-label">CERTIFICATIONS</div>
+            <div class="footer-credential-val">[OFFICIAL CERTIFICATIONS]</div>
+          </div>
+          <div class="footer-credential-box">
+            <div class="footer-credential-label">INSTITUTIONAL PARTNERS</div>
+            <div class="footer-credential-val">[OFFICIAL PARTNERS]</div>
+          </div>
+          <div class="footer-credential-box">
+            <div class="footer-credential-label">HERITAGE</div>
+            <div class="footer-credential-val">Established [OFFICIAL FOUNDING YEAR]</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <div>&copy; 2026 SAF International. All Rights Reserved.</div>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <span>&bull;</span>
+          <a href="#">Terms &amp; Conditions</a>
+          <span>&bull;</span>
+          <a href="#">Sourcing Compliance</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Quote Modal -->
+  <div id="quote-modal-overlay" class="modal-overlay">
+    <div class="modal-container">
+      <div class="modal-header">
+        <h3 class="modal-title">Request Formal Quotation</h3>
+        <button class="modal-close-btn" onclick="Modal.closeQuote()" aria-label="Close dialog">&times;</button>
+      </div>
+      <div class="modal-body">
+        <form id="quote-modal-form" onsubmit="Modal.handleQuoteSubmit(event)">
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="quote-name">Your Full Name *</label>
+              <input type="text" id="quote-name" name="name" class="form-input" required placeholder="e.g. Eleanor Vance">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="quote-company">Company / Organization *</label>
+              <input type="text" id="quote-company" name="company" class="form-input" required placeholder="e.g. Apex Global Group">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="quote-email">Work Email *</label>
+              <input type="email" id="quote-email" name="email" class="form-input" required placeholder="procurement@company.com">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="quote-phone">Direct Phone / WhatsApp</label>
+              <input type="tel" id="quote-phone" name="phone" class="form-input" placeholder="+1 (555) 019-2834">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="quote-category-input">Product Category</label>
+              <input type="text" id="quote-category-input" name="category" class="form-input">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="quote-product-input">Product / SKU</label>
+              <input type="text" id="quote-product-input" name="product" class="form-input">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="quote-quantity">Estimated Quantity (Units) *</label>
+              <select id="quote-quantity" name="quantity" class="form-select" required>
+                <option value="100-250">100 – 250 Units</option>
+                <option value="250-500">250 – 500 Units</option>
+                <option value="500-1000">500 – 1,000 Units</option>
+                <option value="1000-5000">1,000 – 5,000 Units</option>
+                <option value="5000+">5,000+ Units (Container Load)</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="quote-delivery">Target Delivery Timeline</label>
+              <select id="quote-delivery" name="delivery" class="form-select">
+                <option value="standard">Standard Production (10–14 Days)</option>
+                <option value="urgent">Express Expedited (7 Days)</option>
+                <option value="planned">Future Fiscal Year / Event Date</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="quote-notes">Customization &amp; Specification Notes</label>
+            <textarea id="quote-notes" name="notes" rows="3" class="form-textarea" placeholder="Detail any specific branding techniques, packaging requirements, or delivery locations..."></textarea>
+          </div>
+          <div style="display: flex; justify-content: flex-end; gap: 12px; margin-top: 24px;">
+            <button type="button" class="btn btn-outline-gold" onclick="Modal.closeQuote()">Cancel</button>
+            <button type="submit" class="btn btn-gold">Submit RFQ to Trade Desk &rarr;</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/modal.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

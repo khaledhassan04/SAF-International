@@ -1,0 +1,1333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SAF International — Thoughtful Products. Trusted Sourcing. Global Reach.</title>
+  <meta name="description" content="SAF International connects businesses with thoughtfully selected gifts, corporate merchandise, stationery, household products, handicrafts, and lifestyle items through reliable global sourcing and supply.">
+  
+  <!-- Google Fonts: Playfair Display & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="assets/css/variables.css">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/pages.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       Site Navigation Header
+       ========================================================================== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <!-- Brand Logo -->
+      <a href="index.html" class="brand-logo" aria-label="SAF International Homepage">
+        <img src="assets/images/logo.png" alt="SAF International Trading & Sourcing" height="38">
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav-menu" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="products.html" class="nav-link">Products</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="collections.html" class="nav-link">Collections</a>
+      </nav>
+
+      <!-- Header Action Button -->
+      <div class="header-actions">
+        <button class="btn btn-gold" onclick="Modal.openQuote()">Request a Quote</button>
+        <button class="mobile-toggle" aria-label="Open Mobile Menu" onclick="document.getElementById('mobile-nav-drawer').classList.toggle('active')">
+          &#9776;
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div id="mobile-nav-drawer" style="display: none; position: fixed; top: 72px; left: 0; width: 100%; background: #FAF8F5; border-bottom: 1px solid var(--color-border); padding: 24px; z-index: 999; flex-direction: column; gap: 16px;">
+    <a href="index.html" class="nav-link active">Home</a>
+    <a href="about.html" class="nav-link">About Us</a>
+    <a href="products.html" class="nav-link">Products</a>
+    <a href="services.html" class="nav-link">Services</a>
+    <a href="collections.html" class="nav-link">Collections</a>
+    <button class="btn btn-gold" onclick="Modal.openQuote()" style="margin-top: 10px;">Request a Quote</button>
+  </div>
+  <style>
+    #mobile-nav-drawer.active { display: flex !important; }
+  </style>
+
+  <main id="main-content">
+
+    <!-- ==========================================================================
+         Section 1: Hero Section
+         ========================================================================== -->
+    <section class="hero-section">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="eyebrow eyebrow-pill">
+            GLOBAL TRADING & SOURCING
+          </div>
+          <h1 class="hero-title">
+            Thoughtful Products.<br>
+            <em>Trusted Sourcing.</em><br>
+            Global Reach.
+          </h1>
+          <p class="hero-description">
+            SAF International connects businesses with thoughtfully selected gifts, corporate merchandise, stationery, household products, handicrafts, and lifestyle items through reliable global sourcing and supply.
+          </p>
+          <div class="hero-buttons">
+            <a href="products.html" class="btn btn-dark">Explore Products</a>
+            <button class="btn btn-gold" onclick="Modal.openQuote()">Request a Quote</button>
+          </div>
+          <div class="hero-audience-focus">
+            <strong>Audience Focus</strong> &bull; For Corporate &bull; Retail &bull; Wholesale &bull; Events
+          </div>
+        </div>
+
+        <div class="hero-media-wrap">
+          <div class="hero-card">
+            <div class="hero-img-box">
+              <img src="assets/images/hero-img.png" alt="Curated corporate gifting set by SAF International">
+            </div>
+            <div class="hero-card-bottom">
+              <div>
+                <div class="hero-dossier-label">CURATION DOSSIER</div>
+                <div class="hero-dossier-title">Corporate &amp; Institutional Gifting</div>
+              </div>
+              <div class="hero-badge-icon" title="Certified Curation">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero Floating Pill -->
+          <div class="hero-floating-pill">
+            <div class="hero-pill-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="2" y1="12" x2="22" y2="12"></line>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+              </svg>
+            </div>
+            <div>
+              <div class="hero-pill-title">Global Supply Chain</div>
+              <div class="hero-pill-sub">Bilateral Trade &amp; SGS Verification</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Section 2: Explore Our Product Categories
+         ========================================================================== -->
+    <section class="section" style="padding-top: 60px;">
+      <div class="container">
+        <div class="section-header-flex">
+          <div>
+            <div class="eyebrow">PORTFOLIO OVERVIEW</div>
+            <h2 class="section-headline">Explore Our Product Categories</h2>
+            <p class="section-desc">
+              Discover a diverse range of products for corporate gifting, retail, promotional campaigns, everyday use, and special occasions.
+            </p>
+          </div>
+          <div>
+            <a href="products.html" class="btn-text-gold">
+              VIEW ALL PRODUCTS &rarr;
+            </a>
+          </div>
+        </div>
+
+        <div class="category-grid">
+          <!-- Card 1 -->
+          <a href="category-details.html?id=corporate-gifts" class="category-card">
+            <div class="category-card-img-box">
+              <img src="assets/images/cat-01-corporate.jpg" alt="Corporate Gifts category">
+            </div>
+            <div class="category-card-body">
+              <h3 class="category-card-title">Corporate Gifts</h3>
+              <p class="category-card-desc">Premium and practical gifts for employees, clients, partners, and corporate occasions.</p>
+              <span class="category-card-link">INQUIRE CATEGORY &gt;</span>
+            </div>
+          </a>
+
+          <!-- Card 2 -->
+          <a href="category-details.html?id=gift-items" class="category-card">
+            <div class="category-card-img-box">
+              <img src="assets/images/cat-02-celebration.jpg" alt="Gift Items category">
+            </div>
+            <div class="category-card-body">
+              <h3 class="category-card-title">Gift Items</h3>
+              <p class="category-card-desc">Thoughtful gifts for celebrations, events, occasions, and special moments.</p>
+              <span class="category-card-link">INQUIRE CATEGORY &gt;</span>
+            </div>
+          </a>
+
+          <!-- Card 3 -->
+          <a href="category-details.html?id=stationery" class="category-card">
+            <div class="category-card-img-box">
+              <img src="assets/images/cat-03-desk.jpg" alt="Stationery category">
+            </div>
+            <div class="category-card-body">
+              <h3 class="category-card-title">Stationery</h3>
+              <p class="category-card-desc">Notebooks, pens, organizers, office stationery, and everyday writing essentials.</p>
+              <span class="category-card-link">INQUIRE CATEGORY &gt;</span>
+            </div>
+          </a>
+
+          <!-- Card 4 -->
+          <a href="category-details.html?id=household" class="category-card">
+            <div class="category-card-img-box">
+              <img src="assets/images/cat-04-home.jpg" alt="Household category">
+            </div>
+            <div class="category-card-body">
+              <h3 class="category-card-title">Household</h3>
+              <p class="category-card-desc">Useful and stylish products for home, kitchen, organization, and everyday living.</p>
+              <span class="category-card-link">INQUIRE CATEGORY &gt;</span>
+            </div>
+          </a>
+
+          <!-- Card 5 -->
+          <a href="category-details.html?id=handicrafts" class="category-card">
+            <div class="category-card-img-box">
+              <img src="assets/images/cat-05-heritage.jpg" alt="Handicrafts category">
+            </div>
+            <div class="category-card-body">
+              <h3 class="category-card-title">Handicrafts</h3>
+              <p class="category-card-desc">Distinctive handcrafted products combining traditional craftsmanship with modern appeal.</p>
+              <span class="category-card-link">INQUIRE CATEGORY &gt;</span>
+            </div>
+          </a>
+
+          <!-- Card 6 -->
+          <a href="category-details.html?id=promotional-products" class="category-card">
+            <div class="category-card-img-box">
+              <img src="assets/images/cat-06-campaign.jpg" alt="Promotional Products category">
+            </div>
+            <div class="category-card-body">
+              <h3 class="category-card-title">Promotional Products</h3>
+              <p class="category-card-desc">Branded merchandise and promotional items for campaigns, events, and business marketing.</p>
+              <span class="category-card-link">INQUIRE CATEGORY &gt;</span>
+            </div>
+          </a>
+
+          <!-- Card 7 -->
+          <a href="category-details.html?id=bags-accessories" class="category-card">
+            <div class="category-card-img-box">
+              <img src="assets/images/cat-07-carry.jpg" alt="Bags & Accessories category">
+            </div>
+            <div class="category-card-body">
+              <h3 class="category-card-title">Bags &amp; Accessories</h3>
+              <p class="category-card-desc">Corporate bags, lifestyle bags, pouches, accessories, and everyday carry products.</p>
+              <span class="category-card-link">INQUIRE CATEGORY &gt;</span>
+            </div>
+          </a>
+
+          <!-- Card 8 -->
+          <a href="category-details.html?id=event-products" class="category-card">
+            <div class="category-card-img-box">
+              <img src="assets/images/cat-08-occasions.jpg" alt="Event Products category">
+            </div>
+            <div class="category-card-body">
+              <h3 class="category-card-title">Event Products</h3>
+              <p class="category-card-desc">Curated products for festivals, celebrations, conferences, events, and special occasions.</p>
+              <span class="category-card-link">INQUIRE CATEGORY &gt;</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Section 3: About SAF International
+         ========================================================================== -->
+    <section class="section about-section">
+      <div class="container">
+        <div class="about-grid">
+          <!-- Left 4-Image Mosaic -->
+          <div class="about-mosaic-container">
+            <div class="about-mosaic-col">
+              <div class="about-mosaic-item" style="aspect-ratio: 16/10;">
+                <img src="assets/images/about-mosaic-1-clean.jpg" alt="SAF International Luxury Box">
+              </div>
+              <div class="about-mosaic-item" style="aspect-ratio: 10/12;">
+                <img src="assets/images/about-mosaic-3.jpg" alt="Artisanal ceramic vase and wooden bowl">
+              </div>
+            </div>
+            <div class="about-mosaic-col">
+              <div class="about-mosaic-item" style="aspect-ratio: 10/12;">
+                <img src="assets/images/about-mosaic-2.jpg" alt="Stationery daily overview journal and gold pen">
+              </div>
+              <div class="about-mosaic-item" style="aspect-ratio: 16/10;">
+                <img src="assets/images/about-mosaic-4.jpg" alt="Eco-friendly bamboo lifestyle lunchbox and flask">
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Content -->
+          <div class="about-content-wrap">
+            <div class="eyebrow">ABOUT SAF INTERNATIONAL</div>
+            <h2 class="section-headline">Your Partner for Products, Sourcing &amp; Trading</h2>
+            <p class="section-desc" style="margin-bottom: 16px;">
+              SAF International is a trading and sourcing company focused on bringing together a diverse range of quality products for businesses, organizations, retailers, and corporate customers.
+            </p>
+            <p class="section-desc">
+              From corporate gifts and promotional merchandise to stationery, household products, handicrafts, and lifestyle items, we help our customers find the right products for their needs. Our approach combines product variety, reliable sourcing, professional service, and long-term business relationships.
+            </p>
+
+            <!-- 3 Stat Feature Boxes -->
+            <div class="about-feature-boxes">
+              <div class="about-feature-box">
+                <div class="about-feature-box-title">Bespoke</div>
+                <div class="about-feature-box-desc">Tailored sourcing per client project</div>
+              </div>
+              <div class="about-feature-box">
+                <div class="about-feature-box-title">Vetted</div>
+                <div class="about-feature-box-desc">Rigorous compliance and factory audits</div>
+              </div>
+              <div class="about-feature-box">
+                <div class="about-feature-box-title">Direct</div>
+                <div class="about-feature-box-desc">Streamlined global logistics &amp; trade</div>
+              </div>
+            </div>
+
+            <a href="about.html" class="btn btn-dark">
+              Learn More About Us &rarr;
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Section 4: Our Products (6 Featured Items)
+         ========================================================================== -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header-flex">
+          <div>
+            <div class="eyebrow">OUR PRODUCTS</div>
+            <h2 class="section-headline">Products for Every Occasion and Purpose</h2>
+            <p class="section-desc">
+              Carefully curated items engineered for institutional durability and refined brand representation. Strictly trade inquiries.
+            </p>
+          </div>
+          <div>
+            <span class="eyebrow eyebrow-pill">● Wholesale &amp; Institutional MOQs</span>
+          </div>
+        </div>
+
+        <div class="product-grid">
+          <!-- Product 1 -->
+          <div class="product-card">
+            <div class="product-card-img-box">
+              <img src="assets/images/prod-exec-gift.jpg" alt="Executive Gift Set">
+            </div>
+            <div class="product-card-body">
+              <h3 class="product-card-title">Executive Gift Set</h3>
+              <p class="product-card-desc">A curated collection of premium stationery and accessories suitable for corporate gifting.</p>
+              <div class="product-card-actions">
+                <a href="product-details.html?id=executive-gift-set" class="product-card-link">VIEW DETAILS</a>
+                <button class="btn btn-stone" onclick="Modal.openQuote('Executive Gift Set', 'Corporate Gifts')">REQUEST QUOTE</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 2 -->
+          <div class="product-card">
+            <div class="product-card-img-box">
+              <img src="assets/images/prod-notebook.jpg" alt="Premium Notebook">
+            </div>
+            <div class="product-card-body">
+              <h3 class="product-card-title">Premium Notebook</h3>
+              <p class="product-card-desc">Elegant notebook suitable for business meetings, conferences, and everyday use.</p>
+              <div class="product-card-actions">
+                <a href="product-details.html?id=premium-notebook" class="product-card-link">VIEW DETAILS</a>
+                <button class="btn btn-stone" onclick="Modal.openQuote('Premium Notebook', 'Stationery')">REQUEST QUOTE</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 3 -->
+          <div class="product-card">
+            <div class="product-card-img-box">
+              <img src="assets/images/prod-penset.jpg" alt="Corporate Pen Set">
+            </div>
+            <div class="product-card-body">
+              <h3 class="product-card-title">Corporate Pen Set</h3>
+              <p class="product-card-desc">Professional writing set suitable for corporate gifts and promotional campaigns.</p>
+              <div class="product-card-actions">
+                <a href="product-details.html?id=corporate-pen-set" class="product-card-link">VIEW DETAILS</a>
+                <button class="btn btn-stone" onclick="Modal.openQuote('Corporate Pen Set', 'Stationery')">REQUEST QUOTE</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 4 -->
+          <div class="product-card">
+            <div class="product-card-img-box">
+              <img src="assets/images/prod-decor.jpg" alt="Handcrafted Decorative Piece">
+            </div>
+            <div class="product-card-body">
+              <h3 class="product-card-title">Handcrafted Decorative Piece</h3>
+              <p class="product-card-desc">Unique handcrafted product suitable for gifting and lifestyle collections.</p>
+              <div class="product-card-actions">
+                <a href="product-details.html?id=handcrafted-decorative-piece" class="product-card-link">VIEW DETAILS</a>
+                <button class="btn btn-stone" onclick="Modal.openQuote('Handcrafted Decorative Piece', 'Handicrafts')">REQUEST QUOTE</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 5 -->
+          <div class="product-card">
+            <div class="product-card-img-box">
+              <img src="assets/images/prod-organizer.jpg" alt="Travel Organizer">
+            </div>
+            <div class="product-card-body">
+              <h3 class="product-card-title">Travel Organizer</h3>
+              <p class="product-card-desc">Practical organizer designed for travel, corporate gifting, and everyday use.</p>
+              <div class="product-card-actions">
+                <a href="product-details.html?id=travel-organizer" class="product-card-link">VIEW DETAILS</a>
+                <button class="btn btn-stone" onclick="Modal.openQuote('Travel Organizer', 'Bags & Accessories')">REQUEST QUOTE</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 6 -->
+          <div class="product-card">
+            <div class="product-card-img-box">
+              <img src="assets/images/prod-desk.jpg" alt="Desk Organizer">
+            </div>
+            <div class="product-card-body">
+              <h3 class="product-card-title">Desk Organizer</h3>
+              <p class="product-card-desc">Functional desk accessory suitable for offices and corporate environments.</p>
+              <div class="product-card-actions">
+                <a href="product-details.html?id=desk-organizer" class="product-card-link">VIEW DETAILS</a>
+                <button class="btn btn-stone" onclick="Modal.openQuote('Desk Organizer', 'Office Essentials')">REQUEST QUOTE</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Custom Sourcing Callout Banner -->
+        <div class="callout-box">
+          <div>
+            <h3 class="callout-title">Looking for a specific material or bespoke SKU?</h3>
+            <p class="callout-desc">Our sourcing teams in major manufacturing hubs can procure custom designs to exact technical drawings.</p>
+          </div>
+          <div>
+            <a href="products.html" class="btn btn-dark">
+              Explore Full Product Collection &rarr;
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Section 5: Corporate Gifting Dark Banner Section
+         ========================================================================== -->
+    <section class="section dark-section">
+      <div class="container">
+        <div class="eyebrow">CORPORATE GIFTING</div>
+        <h2 class="section-headline">Make Every Business Relationship Memorable</h2>
+        <p class="section-desc">
+          From employee appreciation to client relationships and corporate events, SAF International offers curated gifting solutions designed to make every occasion meaningful.
+        </p>
+
+        <div class="dark-feature-grid">
+          <div class="dark-feature-card">
+            <div class="dark-feature-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="8" r="7"></circle>
+                <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+              </svg>
+            </div>
+            <h3 class="dark-feature-title">Executive Gifts</h3>
+            <p class="dark-feature-desc">VIP clients, board members, and senior business partners designed with ultra-premium materials.</p>
+          </div>
+
+          <div class="dark-feature-card">
+            <div class="dark-feature-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
+            </div>
+            <h3 class="dark-feature-title">Employee Gifts</h3>
+            <p class="dark-feature-desc">Meaningful recognition, onboarding kits, work anniversaries, and company milestone celebrations.</p>
+          </div>
+
+          <div class="dark-feature-card">
+            <div class="dark-feature-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                <line x1="16" y1="2" x2="16" y2="6"></line>
+                <line x1="8" y1="2" x2="8" y2="6"></line>
+                <line x1="3" y1="10" x2="21" y2="10"></line>
+              </svg>
+            </div>
+            <h3 class="dark-feature-title">Event &amp; Conference</h3>
+            <p class="dark-feature-desc">High-attendance summits, expos, shareholder meetings, and curated attendee welcome kits.</p>
+          </div>
+
+          <div class="dark-feature-card">
+            <div class="dark-feature-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="16 18 22 12 16 6"></polyline>
+                <polyline points="8 6 2 12 8 18"></polyline>
+              </svg>
+            </div>
+            <h3 class="dark-feature-title">Custom Corporate Gifts</h3>
+            <p class="dark-feature-desc">Bespoke packaging, precision debossing, custom PMS pantone matching, and customized inserts.</p>
+          </div>
+        </div>
+
+        <div class="dark-section-actions">
+          <button class="btn btn-gold" onclick="Modal.openQuote('Corporate Gift Proposal', 'Corporate Gifting')">
+            Request Corporate Gift Proposal
+          </button>
+          <a href="products.html?category=corporate-gifts" class="btn-text-white">
+            Explore Corporate Gifts &rarr;
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Section 6: Custom Branding
+         ========================================================================== -->
+    <section class="section">
+      <div class="container">
+        <div class="branding-grid">
+          <div>
+            <div class="eyebrow">CUSTOM BRANDING</div>
+            <h2 class="section-headline">Put Your Brand on the Products That Matter</h2>
+            <p class="section-desc">
+              Create memorable branded merchandise by adding your company identity to selected products and packaging with precision craft techniques.
+            </p>
+
+            <div class="branding-techniques-grid">
+              <div class="technique-card">
+                <div class="technique-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="6 9 6 2 18 2 18 9"></polyline>
+                    <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+                    <rect x="6" y="14" width="12" height="8"></rect>
+                  </svg>
+                </div>
+                <div class="technique-title">Logo Printing</div>
+                <div class="technique-desc">Screen, pad &amp; UV full-color</div>
+              </div>
+
+              <div class="technique-card">
+                <div class="technique-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="5"></circle>
+                    <line x1="12" y1="1" x2="12" y2="3"></line>
+                    <line x1="12" y1="21" x2="12" y2="23"></line>
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                    <line x1="1" y1="12" x2="3" y2="12"></line>
+                    <line x1="21" y1="12" x2="23" y2="12"></line>
+                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                  </svg>
+                </div>
+                <div class="technique-title">Laser Engraving</div>
+                <div class="technique-desc">Permanent crisp metal etching</div>
+              </div>
+
+              <div class="technique-card">
+                <div class="technique-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path>
+                    <line x1="7" y1="7" x2="7.01" y2="7"></line>
+                  </svg>
+                </div>
+                <div class="technique-title">Precision Embroidery</div>
+                <div class="technique-desc">High-density apparel &amp; bags</div>
+              </div>
+
+              <div class="technique-card">
+                <div class="technique-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                  </svg>
+                </div>
+                <div class="technique-title">Custom Rigid Packaging</div>
+                <div class="technique-desc">Foil stamped rigid boxes</div>
+              </div>
+
+              <div class="technique-card">
+                <div class="technique-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                  </svg>
+                </div>
+                <div class="technique-title">Metallic Foil Branding</div>
+                <div class="technique-desc">Hot foil gold &amp; silver press</div>
+              </div>
+
+              <div class="technique-card">
+                <div class="technique-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="20 12 20 22 4 22 4 12"></polyline>
+                    <rect x="2" y="7" width="20" height="5"></rect>
+                    <line x1="12" y1="22" x2="12" y2="7"></line>
+                    <path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"></path>
+                    <path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"></path>
+                  </svg>
+                </div>
+                <div class="technique-title">Personalized Sets</div>
+                <div class="technique-desc">Recipient name engraving</div>
+              </div>
+            </div>
+
+            <div class="branding-note">
+              * Note: Availability of customization depends on product specifications and minimum order quantity (MOQ).
+            </div>
+
+            <button class="btn btn-dark" onclick="Modal.openQuote('Custom Branding Project', 'Customization')">
+              Discuss Your Requirement &rarr;
+            </button>
+          </div>
+
+          <!-- Right Heroic Media Box with SLAs -->
+          <div>
+            <div class="branding-media-card">
+              <div class="branding-media-img">
+                <img src="assets/images/branding-box-correct.jpg" alt="SAF International Custom Debossed Gifting Box">
+              </div>
+              <div class="branding-sla-grid">
+                <div class="sla-box">
+                  <div class="sla-label">TURNAROUND</div>
+                  <div class="sla-val">Digital proofs within 48 hours</div>
+                </div>
+                <div class="sla-box">
+                  <div class="sla-label">PRE-PRODUCTION</div>
+                  <div class="sla-val">Physical prototype sign-off</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Section 7: Institutional Gravitas (Why Businesses Choose SAF)
+         ========================================================================== -->
+    <section class="section" style="background-color: var(--color-bg-body);">
+      <div class="container">
+        <div style="text-align: center; max-width: 780px; margin: 0 auto 48px auto;">
+          <div class="eyebrow" style="justify-content: center;">INSTITUTIONAL GRAVITAS</div>
+          <h2 class="section-headline">Why Businesses Choose SAF International</h2>
+          <p class="section-desc" style="margin: 0 auto;">
+            Combining global reach with boutique procurement precision for Fortune 500 corporations, governments, and distributors.
+          </p>
+        </div>
+
+        <div class="value-props-grid">
+          <div class="value-prop-card">
+            <div class="value-prop-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                <polyline points="2 17 12 22 22 17"></polyline>
+                <polyline points="2 12 12 17 22 12"></polyline>
+              </svg>
+            </div>
+            <h3 class="value-prop-title">Wide Product Selection</h3>
+            <p class="value-prop-desc">Multi-category access across corporate merchandise, lifestyle accessories, stationery, homeware, and artisanal crafts.</p>
+          </div>
+
+          <div class="value-prop-card">
+            <div class="value-prop-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+            </div>
+            <h3 class="value-prop-title">Reliable Sourcing</h3>
+            <p class="value-prop-desc">Direct audited manufacturing partnerships ensuring consistent quality standards and bilateral trade compliance.</p>
+          </div>
+
+          <div class="value-prop-card">
+            <div class="value-prop-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="1" y="3" width="15" height="13"></rect>
+                <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
+                <circle cx="5.5" cy="18.5" r="2.5"></circle>
+                <circle cx="18.5" cy="18.5" r="2.5"></circle>
+              </svg>
+            </div>
+            <h3 class="value-prop-title">Bulk Order Support</h3>
+            <p class="value-prop-desc">High-volume logistical capability, container freight coordination, customs clearance, and global multi-drop dispatch.</p>
+          </div>
+
+          <div class="value-prop-card">
+            <div class="value-prop-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 20h9"></path>
+                <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path>
+              </svg>
+            </div>
+            <h3 class="value-prop-title">Custom Branding</h3>
+            <p class="value-prop-desc">End-to-end bespoke tailoring: embossing, laser precision, foil stamps, custom pantones, and custom structural boxes.</p>
+          </div>
+
+          <div class="value-prop-card">
+            <div class="value-prop-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>
+              </svg>
+            </div>
+            <h3 class="value-prop-title">Flexible Product Solutions</h3>
+            <p class="value-prop-desc">Agile procurement solutions adjusted to strict budgetary tolerances, specific event themes, and lead time constraints.</p>
+          </div>
+
+          <div class="value-prop-card">
+            <div class="value-prop-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="8.5" cy="7" r="4"></circle>
+                <line x1="20" y1="8" x2="20" y2="14"></line>
+                <line x1="23" y1="11" x2="17" y2="11"></line>
+              </svg>
+            </div>
+            <h3 class="value-prop-title">Long-Term Partnership</h3>
+            <p class="value-prop-desc">Dedicated enterprise account executives managing multi-year sourcing contracts, inventory buffering, and repeat replenishments.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Section 8: Our Process (5 Steps)
+         ========================================================================== -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header-flex">
+          <div>
+            <div class="eyebrow">OUR PROCESS</div>
+            <h2 class="section-headline">From Idea to Delivery</h2>
+            <p class="section-desc">
+              A disciplined five-stage procurement protocol engineered for clarity, compliance, and guaranteed delivery timelines.
+            </p>
+          </div>
+          <div>
+            <button class="btn btn-dark" onclick="Modal.openQuote()">Start Your Inquiry &rarr;</button>
+          </div>
+        </div>
+
+        <div class="process-grid">
+          <div class="process-card">
+            <div class="process-step-num">01</div>
+            <h3 class="process-card-title">Tell Us What You Need</h3>
+            <p class="process-card-desc">Share product specifications, target quantity, budgetary limits, and delivery schedules.</p>
+            <div class="process-card-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
+                <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>
+              </svg>
+            </div>
+          </div>
+
+          <div class="process-card">
+            <div class="process-step-num">02</div>
+            <h3 class="process-card-title">We Source</h3>
+            <p class="process-card-desc">Our global team identifies qualified production partners and vets material certifications.</p>
+            <div class="process-card-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </div>
+          </div>
+
+          <div class="process-card">
+            <div class="process-step-num">03</div>
+            <h3 class="process-card-title">Select</h3>
+            <p class="process-card-desc">Review curated options, samples, packaging mockups, and commercial Incoterms.</p>
+            <div class="process-card-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="9 11 12 14 22 4"></polyline>
+                <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
+              </svg>
+            </div>
+          </div>
+
+          <div class="process-card">
+            <div class="process-step-num">04</div>
+            <h3 class="process-card-title">Confirm</h3>
+            <p class="process-card-desc">Sign off on pre-production proofs, execute agreements, and initiate manufacturing runs.</p>
+            <div class="process-card-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="16" y1="13" x2="8" y2="13"></line>
+                <line x1="16" y1="17" x2="8" y2="17"></line>
+                <polyline points="10 9 9 9 8 9"></polyline>
+              </svg>
+            </div>
+          </div>
+
+          <div class="process-card">
+            <div class="process-step-num">05</div>
+            <h3 class="process-card-title">Supply</h3>
+            <p class="process-card-desc">Coordinated international logistics, batch QA inspection, and insured delivery to your hub.</p>
+            <div class="process-card-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Section 9: Who We Serve
+         ========================================================================== -->
+    <section class="section" style="background-color: var(--color-bg-body);">
+      <div class="container">
+        <div style="text-align: center; max-width: 780px; margin: 0 auto 48px auto;">
+          <div class="eyebrow" style="justify-content: center;">WHO WE SERVE</div>
+          <h2 class="section-headline">Solutions for Businesses, Organizations &amp; Events</h2>
+          <p class="section-desc" style="margin: 0 auto;">
+            Tailored procurement programs aligned with industry-specific commercial requirements.
+          </p>
+        </div>
+
+        <div class="audience-grid">
+          <div class="audience-card">
+            <div class="audience-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M3 21h18"></path>
+                <path d="M5 21V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16"></path>
+              </svg>
+            </div>
+            <div>
+              <h3 class="audience-title">Corporate &amp; Offices</h3>
+              <p class="audience-desc">Corporate gifting programs, internal executive office essentials, employee reward hampers.</p>
+            </div>
+          </div>
+
+          <div class="audience-card">
+            <div class="audience-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <path d="M16 10a4 4 0 0 1-8 0"></path>
+              </svg>
+            </div>
+            <div>
+              <h3 class="audience-title">Retailers</h3>
+              <p class="audience-desc">Private-label merchandise, customized packaging, seasonal retail collections, point of sale.</p>
+            </div>
+          </div>
+
+          <div class="audience-card">
+            <div class="audience-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="2"></circle>
+                <path d="M16.24 7.76a6 6 0 0 1 0 8.49m-8.48-.01a6 6 0 0 1 0-8.49m11.31-2.82a10 10 0 0 1 0 14.14m-14.14 0a10 10 0 0 1 0-14.14"></path>
+              </svg>
+            </div>
+            <div>
+              <h3 class="audience-title">Wholesalers &amp; Distributors</h3>
+              <p class="audience-desc">Container-volume bulk sourcing, factory-direct pricing tiers, container load consolidation.</p>
+            </div>
+          </div>
+
+          <div class="audience-card">
+            <div class="audience-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                <polyline points="9 22 9 12 15 12 15 22"></polyline>
+              </svg>
+            </div>
+            <div>
+              <h3 class="audience-title">Event &amp; Exhibition Companies</h3>
+              <p class="audience-desc">Conference attendee packs, expo branded merchandise, speaker VIP gifting, badging.</p>
+            </div>
+          </div>
+
+          <div class="audience-card">
+            <div class="audience-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+              </svg>
+            </div>
+            <div>
+              <h3 class="audience-title">Schools &amp; Institutions</h3>
+              <p class="audience-desc">Institutional stationery supplies, student kits, alumni merchandise, graduation gifts.</p>
+            </div>
+          </div>
+
+          <div class="audience-card">
+            <div class="audience-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M20.42 4.58a5.4 5.4 0 0 0-7.65 0l-.77.78-.77-.78a5.4 5.4 0 0 0-7.65 7.65l.77.78L12 21.01l7.65-7.65.77-.78a5.4 5.4 0 0 0 0-7.65z"></path>
+              </svg>
+            </div>
+            <div>
+              <h3 class="audience-title">NGOs &amp; Organizations</h3>
+              <p class="audience-desc">Ethically sourced campaign materials, donor appreciation items, sustainable handicraft orders.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Section 10: Editorial Feature Showcases (Craft, Stationery, Household)
+         ========================================================================== -->
+    <section class="section">
+      <div class="container">
+        <!-- Showcase 1: Craft & Culture Box -->
+        <div class="feature-showcase-box">
+          <div class="feature-showcase-grid">
+            <div>
+              <div class="eyebrow">CRAFT &amp; CULTURE</div>
+              <h2 class="section-headline">Products with Character, Craftsmanship &amp; Story</h2>
+              <p class="section-desc">
+                Our artisanal collection brings ancestral techniques to contemporary corporate and retail collections. Ethically produced, authentically finished.
+              </p>
+
+              <div class="feature-tag-list">
+                <span class="feature-tag-pill">Decorative Items</span>
+                <span class="feature-tag-pill">Handmade Accessories</span>
+                <span class="feature-tag-pill">Traditional Crafts</span>
+                <span class="feature-tag-pill">Home D&eacute;cor</span>
+                <span class="feature-tag-pill">Giftable Crafts</span>
+              </div>
+
+              <button class="btn btn-dark" onclick="Modal.openQuote('Handicrafts Suite', 'Handicrafts')">
+                Inquire Handicrafts Suite &rarr;
+              </button>
+            </div>
+
+            <div class="feature-showcase-img">
+              <img src="assets/images/craft-showcase-final.jpg" alt="Artisanal ceramics and woven baskets by SAF International">
+            </div>
+          </div>
+        </div>
+
+        <!-- Dual Split Features (Stationery & Household) -->
+        <div class="dual-feature-grid">
+          <!-- Left: Stationery -->
+          <div class="dual-feature-card">
+            <div class="eyebrow">CORPORATE ESSENTIALS</div>
+            <h3 class="section-headline" style="font-size: 1.625rem;">Stationery: Everyday Essentials, Professionally Selected</h3>
+            <p class="section-desc" style="font-size: 0.875rem;">
+              Hardcover journals, fountain pens, executive folders, desk pads, and archival office accessories crafted for enduring utility.
+            </p>
+
+            <div class="feature-tag-list" style="margin-top: 16px; margin-bottom: 24px;">
+              <span class="feature-tag-pill">Notebooks</span>
+              <span class="feature-tag-pill">Pens</span>
+              <span class="feature-tag-pill">Diaries</span>
+              <span class="feature-tag-pill">Organizers</span>
+              <span class="feature-tag-pill">Desk Accessories</span>
+            </div>
+
+            <div style="margin-top: auto;">
+              <a href="products.html?category=stationery" class="btn-text-gold">
+                REQUEST STATIONERY CATALOGUE &rarr;
+              </a>
+            </div>
+          </div>
+
+          <!-- Right: Household -->
+          <div class="dual-feature-card">
+            <div class="eyebrow">MODERN LIVING</div>
+            <h3 class="section-headline" style="font-size: 1.625rem;">Household: Useful Products for Everyday Living</h3>
+            <p class="section-desc" style="font-size: 0.875rem;">
+              Premium kitchenware, minimalist storage systems, insulated drinkware, dining accessories, and contemporary home d&eacute;cor.
+            </p>
+
+            <div class="feature-tag-list" style="margin-top: 16px; margin-bottom: 24px;">
+              <span class="feature-tag-pill">Kitchen</span>
+              <span class="feature-tag-pill">Home Organization</span>
+              <span class="feature-tag-pill">Lifestyle Accessories</span>
+              <span class="feature-tag-pill">Dining &amp; Travel</span>
+            </div>
+
+            <div style="margin-top: auto;">
+              <a href="products.html?category=household" class="btn-text-gold">
+                REQUEST HOUSEHOLD CATALOGUE &rarr;
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Section 11: Curated Collections
+         ========================================================================== -->
+    <section class="section" style="padding-top: 40px; padding-bottom: 60px;">
+      <div class="container">
+        <div style="text-align: center; max-width: 780px; margin: 0 auto 40px auto;">
+          <div class="eyebrow" style="justify-content: center;">THEMED SELECTIONS</div>
+          <h2 class="section-headline">Curated Collections</h2>
+          <p class="section-desc" style="margin: 0 auto;">
+            Pre-architected product pairings tailored to signature business scenarios.
+          </p>
+        </div>
+
+        <div class="collections-row-grid">
+          <a href="collections.html#executive" class="collection-item-card">
+            <div class="collection-item-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="6 3 18 3 22 9 12 22 2 9 6 3"></polygon>
+              </svg>
+            </div>
+            <div class="collection-item-title">Executive</div>
+            <div class="collection-item-sub">VIP GIFTING</div>
+          </a>
+
+          <a href="collections.html#everyday" class="collection-item-card">
+            <div class="collection-item-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                <polyline points="9 11 12 14 22 4"></polyline>
+              </svg>
+            </div>
+            <div class="collection-item-title">Everyday</div>
+            <div class="collection-item-sub">OFFICE BASICS</div>
+          </a>
+
+          <a href="collections.html#premium" class="collection-item-card">
+            <div class="collection-item-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="20 12 20 22 4 22 4 12"></polyline>
+                <rect x="2" y="7" width="20" height="5"></rect>
+                <line x1="12" y1="22" x2="12" y2="7"></line>
+              </svg>
+            </div>
+            <div class="collection-item-title">Premium</div>
+            <div class="collection-item-sub">LUXURY KITS</div>
+          </a>
+
+          <a href="collections.html#event" class="collection-item-card">
+            <div class="collection-item-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+              </svg>
+            </div>
+            <div class="collection-item-title">Event</div>
+            <div class="collection-item-sub">CONFERENCES</div>
+          </a>
+
+          <a href="collections.html#eco-friendly" class="collection-item-card">
+            <div class="collection-item-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M20.24 12.24a6 6 0 0 0-8.49-8.49L5 10.5V19h8.5z"></path>
+                <line x1="16" y1="8" x2="2" y2="22"></line>
+                <line x1="17.5" y1="15" x2="9" y2="15"></line>
+              </svg>
+            </div>
+            <div class="collection-item-title">Eco-Friendly</div>
+            <div class="collection-item-sub">SUSTAINABLE</div>
+          </a>
+
+          <a href="collections.html#seasonal" class="collection-item-card">
+            <div class="collection-item-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+              </svg>
+            </div>
+            <div class="collection-item-title">Seasonal</div>
+            <div class="collection-item-sub">FESTIVALS</div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Section 12: Trusted by Businesses (Official Testimonials)
+         ========================================================================== -->
+    <section class="section" style="background-color: var(--color-bg-body);">
+      <div class="container">
+        <div style="text-align: center; max-width: 780px; margin: 0 auto 48px auto;">
+          <div class="eyebrow" style="justify-content: center;">INSTITUTIONAL TRUST</div>
+          <h2 class="section-headline">Trusted by Businesses</h2>
+          <p class="section-desc" style="margin: 0 auto;">
+            Enduring sourcing partnerships across global financial institutions, multinationals, and retail conglomerates.
+          </p>
+        </div>
+
+        <div class="testimonial-grid">
+          <!-- Testimonial 1 -->
+          <div class="testimonial-card">
+            <div class="testimonial-stars">
+              &#9733;&#9733;&#9733;&#9733;&#9733;
+            </div>
+            <p class="testimonial-quote">
+              &ldquo;[OFFICIAL TESTIMONIAL 1: The precision with which SAF International managed our annual global leadership summit hampers was exemplary. Flawless custom leather embossing and zero defect rate across 3,000 units.]&rdquo;
+            </p>
+            <div class="testimonial-author">[Client Designation, Multinational Bank]</div>
+            <div class="testimonial-org">[Global Corporate Client]</div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="testimonial-card">
+            <div class="testimonial-stars">
+              &#9733;&#9733;&#9733;&#9733;&#9733;
+            </div>
+            <p class="testimonial-quote">
+              &ldquo;[OFFICIAL TESTIMONIAL 2: Reliable container-level supply schedules and verified product safety compliance have made SAF International our primary procurement channel for private-label household collections.]&rdquo;
+            </p>
+            <div class="testimonial-author">[Head of Merchandising]</div>
+            <div class="testimonial-org">[Retail Department Group]</div>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="testimonial-card">
+            <div class="testimonial-stars">
+              &#9733;&#9733;&#9733;&#9733;&#9733;
+            </div>
+            <p class="testimonial-quote">
+              &ldquo;[OFFICIAL TESTIMONIAL 3: Authentic artisanal craftsmanship coupled with rigorous commercial trade terms. They successfully bridged indigenous crafts with modern corporate packaging.]&rdquo;
+            </p>
+            <div class="testimonial-author">[Director of External Affairs]</div>
+            <div class="testimonial-org">[International NGO]</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Section 13: Final Call to Action Banner (Midnight Navy)
+         ========================================================================== -->
+    <section class="cta-banner-section">
+      <div class="container cta-banner-content">
+        <div class="eyebrow eyebrow-light" style="justify-content: center;">READY TO ELEVATE YOUR SOURCING?</div>
+        <h2 class="section-headline text-white" style="margin-bottom: 16px;">
+          Looking for the Right Products for Your Business?
+        </h2>
+        <p class="section-desc" style="margin: 0 auto; color: #94A3B8;">
+          Partner with SAF International for dependable global sourcing, exquisite corporate gifting, and bespoke manufactured goods built to your specifications.
+        </p>
+
+        <div class="cta-banner-buttons">
+          <button class="btn btn-gold" onclick="Modal.openQuote()">Request a Quote</button>
+          <a href="products.html" class="btn btn-outline-white">Explore Products</a>
+        </div>
+
+        <div class="cta-contact-info-row">
+          <div class="cta-contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+            </svg>
+            <span>[OFFICIAL PHONE]</span>
+          </div>
+
+          <div class="cta-contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+            <span>[OFFICIAL EMAIL]</span>
+          </div>
+
+          <div class="cta-contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+            <span>[OFFICIAL ADDRESS]</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==========================================================================
+       Site Footer
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <!-- Col 1: About SAF International -->
+        <div>
+          <h4 class="font-serif" style="font-size: 1.25rem; font-weight: 700; color: var(--color-text-title); margin-bottom: 12px;">
+            SAF International
+          </h4>
+          <p style="line-height: 1.6; color: var(--color-text-body); max-width: 260px;">
+            A global trading and sourcing company connecting businesses with gifts, corporate merchandise, stationery, household products, handicrafts, and lifestyle products.
+          </p>
+        </div>
+
+        <!-- Col 2: Products -->
+        <div>
+          <div class="footer-col-title">PRODUCTS</div>
+          <ul class="footer-links-list">
+            <li><a href="products.html?category=corporate-gifts">Corporate Gifts</a></li>
+            <li><a href="products.html?category=gift-items">Gift Items</a></li>
+            <li><a href="products.html?category=stationery">Stationery</a></li>
+            <li><a href="products.html?category=household">Household</a></li>
+            <li><a href="products.html?category=handicrafts">Handicrafts</a></li>
+            <li><a href="products.html?category=promotional-products">Promotional Products</a></li>
+            <li><a href="products.html?category=bags-accessories">Bags &amp; Accessories</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Business & Sourcing -->
+        <div>
+          <div class="footer-col-title">BUSINESS &amp; SOURCING</div>
+          <ul class="footer-links-list">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="collections.html">Collections</a></li>
+            <li><a href="products.html?category=corporate-gifts">Corporate Gifts</a></li>
+            <li><a href="services.html#industries">Industries</a></li>
+            <li><a href="services.html#process">Sourcing Process</a></li>
+            <li><a href="about.html#news">News &amp; Insights</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Client Support -->
+        <div>
+          <div class="footer-col-title">CLIENT SUPPORT</div>
+          <ul class="footer-links-list">
+            <li><a href="quote.html">Request a Quote</a></li>
+            <li><a href="quote.html#inquiry">Product Inquiry</a></li>
+            <li><a href="services.html#branding">Custom Branding</a></li>
+            <li><a href="about.html#faq">FAQ</a></li>
+            <li><a href="services.html#terms">Terms of Trade</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 5: Official Credentials -->
+        <div>
+          <div class="footer-col-title">OFFICIAL CREDENTIALS</div>
+          <div class="footer-credential-box">
+            <div class="footer-credential-label">CERTIFICATIONS</div>
+            <div class="footer-credential-val">[OFFICIAL CERTIFICATIONS]</div>
+          </div>
+          <div class="footer-credential-box">
+            <div class="footer-credential-label">INSTITUTIONAL PARTNERS</div>
+            <div class="footer-credential-val">[OFFICIAL PARTNERS]</div>
+          </div>
+          <div class="footer-credential-box">
+            <div class="footer-credential-label">HERITAGE</div>
+            <div class="footer-credential-val">Established [OFFICIAL FOUNDING YEAR]</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <div>
+          &copy; 2026 SAF International. All Rights Reserved.
+        </div>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <span>&bull;</span>
+          <a href="#">Terms &amp; Conditions</a>
+          <span>&bull;</span>
+          <a href="#">Sourcing Compliance</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       Request A Quote Global Modal
+       ========================================================================== -->
+  <div id="quote-modal-overlay" class="modal-overlay">
+    <div class="modal-container">
+      <div class="modal-header">
+        <h3 class="modal-title">Request Formal Quotation</h3>
+        <button class="modal-close-btn" onclick="Modal.closeQuote()" aria-label="Close dialog">&times;</button>
+      </div>
+      <div class="modal-body">
+        <form id="quote-modal-form" onsubmit="Modal.handleQuoteSubmit(event)">
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="quote-name">Your Full Name *</label>
+              <input type="text" id="quote-name" name="name" class="form-input" required placeholder="e.g. Eleanor Vance">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="quote-company">Company / Organization *</label>
+              <input type="text" id="quote-company" name="company" class="form-input" required placeholder="e.g. Apex Global Group">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="quote-email">Work Email *</label>
+              <input type="email" id="quote-email" name="email" class="form-input" required placeholder="procurement@company.com">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="quote-phone">Direct Phone / WhatsApp</label>
+              <input type="tel" id="quote-phone" name="phone" class="form-input" placeholder="+1 (555) 019-2834">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="quote-category-input">Product Category</label>
+              <input type="text" id="quote-category-input" name="category" class="form-input" placeholder="e.g. Corporate Gifts">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="quote-product-input">Product / SKU</label>
+              <input type="text" id="quote-product-input" name="product" class="form-input" placeholder="e.g. Executive Gift Set (SAF-EXEC-01)">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="quote-quantity">Estimated Quantity (Units) *</label>
+              <select id="quote-quantity" name="quantity" class="form-select" required>
+                <option value="100-250">100 – 250 Units</option>
+                <option value="250-500">250 – 500 Units</option>
+                <option value="500-1000">500 – 1,000 Units</option>
+                <option value="1000-5000">1,000 – 5,000 Units</option>
+                <option value="5000+">5,000+ Units (Container Load)</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="quote-delivery">Target Delivery Timeline</label>
+              <select id="quote-delivery" name="delivery" class="form-select">
+                <option value="standard">Standard Production (10–14 Days)</option>
+                <option value="urgent">Express Expedited (7 Days)</option>
+                <option value="planned">Future Fiscal Year / Event Date</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="quote-notes">Customization &amp; Specification Notes</label>
+            <textarea id="quote-notes" name="notes" rows="3" class="form-textarea" placeholder="Detail any specific branding techniques (foil stamping, laser engraving, custom PMS pantone), packaging requirements, or delivery locations..."></textarea>
+          </div>
+
+          <div style="display: flex; justify-content: flex-end; gap: 12px; margin-top: 24px;">
+            <button type="button" class="btn btn-outline-gold" onclick="Modal.closeQuote()">Cancel</button>
+            <button type="submit" class="btn btn-gold">Submit RFQ to Trade Desk &rarr;</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Global Scripts -->
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/modal.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

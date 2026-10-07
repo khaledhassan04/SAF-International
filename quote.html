@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Request a Quote — SAF International Trading & Sourcing</title>
+  <meta name="description" content="Submit a formal Request for Quotation (RFQ) to SAF International Trade Desk. Fast turnarounds, verified pricing, and bilateral trade compliance.">
+  
+  <!-- Google Fonts: Playfair Display & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="assets/css/variables.css">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/pages.css">
+</head>
+<body>
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo" aria-label="SAF International Homepage">
+        <img src="assets/images/logo.png" alt="SAF International Trading & Sourcing" height="38">
+      </a>
+
+      <nav class="nav-menu" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="products.html" class="nav-link">Products</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="collections.html" class="nav-link">Collections</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="quote.html" class="btn btn-gold">Request a Quote</a>
+        <button class="mobile-toggle" aria-label="Open Mobile Menu" onclick="document.getElementById('mobile-nav-drawer').classList.toggle('active')">
+          &#9776;
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div id="mobile-nav-drawer" style="display: none; position: fixed; top: 72px; left: 0; width: 100%; background: #FAF8F5; border-bottom: 1px solid var(--color-border); padding: 24px; z-index: 999; flex-direction: column; gap: 16px;">
+    <a href="index.html" class="nav-link">Home</a>
+    <a href="about.html" class="nav-link">About Us</a>
+    <a href="products.html" class="nav-link">Products</a>
+    <a href="services.html" class="nav-link">Services</a>
+    <a href="collections.html" class="nav-link">Collections</a>
+    <a href="quote.html" class="btn btn-gold" style="margin-top: 10px;">Request a Quote</a>
+  </div>
+
+  <main>
+    <!-- Header Banner -->
+    <section class="page-header-banner">
+      <div class="container">
+        <nav class="breadcrumbs">
+          <a href="index.html">Home</a>
+          <span>/</span>
+          <span class="current">Request a Quote</span>
+        </nav>
+        <div class="eyebrow">TRADE DESK SOURCING RFQ</div>
+        <h1 class="section-headline">Institutional Quotation &amp; Project Intake</h1>
+        <p class="section-desc">
+          Submit your product specifications, target volumes, and delivery timeline. Our enterprise account managers generate comprehensive commercial quotations within 24–48 hours.
+        </p>
+      </div>
+    </section>
+
+    <!-- RFQ Form & Trade Desk Info Grid -->
+    <section class="section" style="padding-top: 0;">
+      <div class="container">
+        <div style="display: grid; grid-template-columns: 1.25fr 0.75fr; gap: 48px; align-items: start;">
+          
+          <!-- Left: Comprehensive RFQ Form -->
+          <div style="background: #FFFFFF; border: 1px solid var(--color-border); border-radius: var(--radius-lg); padding: 40px; box-shadow: var(--shadow-card);">
+            <div class="eyebrow">PROCUREMENT PARAMETERS</div>
+            <h2 class="font-serif" style="font-size: 1.75rem; color: var(--color-text-title); margin-bottom: 24px;">
+              Request Official Quotation
+            </h2>
+
+            <form onsubmit="Modal.handleQuoteSubmit(event)">
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="full-name">Full Name *</label>
+                  <input type="text" id="full-name" name="name" class="form-input" required placeholder="e.g. Marcus Aurelius">
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="company-org">Company / Enterprise Organization *</label>
+                  <input type="text" id="company-org" name="company" class="form-input" required placeholder="e.g. Meridian Financial Group">
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="work-email">Corporate Email *</label>
+                  <input type="email" id="work-email" name="email" class="form-input" required placeholder="m.aurelius@meridian.com">
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="work-phone">Phone / WhatsApp *</label>
+                  <input type="tel" id="work-phone" name="phone" class="form-input" required placeholder="+1 (555) 234-5678">
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="category-select">Product Category *</label>
+                  <select id="category-select" class="form-select" required>
+                    <option value="corporate-gifts">Corporate Gifts (01)</option>
+                    <option value="gift-items">Gift Items (02)</option>
+                    <option value="stationery">Stationery (03)</option>
+                    <option value="household">Household (04)</option>
+                    <option value="handicrafts">Handicrafts (05)</option>
+                    <option value="promotional-products">Promotional Products (06)</option>
+                    <option value="bags-accessories">Bags &amp; Accessories (07)</option>
+                    <option value="event-products">Event Products (08)</option>
+                    <option value="bespoke">Bespoke SKU / Custom Manufacture</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="product-sku">Specific Product / SKU (If Known)</label>
+                  <input type="text" id="product-sku" name="product" class="form-input" placeholder="e.g. SAF-EXEC-01 Executive Gift Set">
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="order-quantity">Estimated Order Quantity (Units) *</label>
+                  <select id="order-quantity" name="quantity" class="form-select" required>
+                    <option value="100-250">100 – 250 Units (Standard MOQ)</option>
+                    <option value="250-500">250 – 500 Units (-8% Tier)</option>
+                    <option value="500-1000">500 – 1,000 Units (-12% Tier)</option>
+                    <option value="1000-5000">1,000 – 5,000 Units (Pallet Volume)</option>
+                    <option value="5000+">5,000+ Units (Full Container FCL)</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="incoterms-select">Preferred Delivery / Incoterms</label>
+                  <select id="incoterms-select" class="form-select">
+                    <option value="ddp">DDP (Delivered Duty Paid to Door)</option>
+                    <option value="fob">FOB (Freight On Board)</option>
+                    <option value="cif">CIF (Cost, Insurance &amp; Freight)</option>
+                    <option value="exw">EXW (Ex Works Factory)</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label">Required Branding Techniques</label>
+                <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-top: 6px;">
+                  <label style="font-size: 0.8125rem; display: flex; align-items: center; gap: 8px;">
+                    <input type="checkbox" name="tech" value="foil" checked> Foil Stamping
+                  </label>
+                  <label style="font-size: 0.8125rem; display: flex; align-items: center; gap: 8px;">
+                    <input type="checkbox" name="tech" value="laser"> Laser Engraving
+                  </label>
+                  <label style="font-size: 0.8125rem; display: flex; align-items: center; gap: 8px;">
+                    <input type="checkbox" name="tech" value="screen"> Screen / UV Print
+                  </label>
+                  <label style="font-size: 0.8125rem; display: flex; align-items: center; gap: 8px;">
+                    <input type="checkbox" name="tech" value="emboss"> Deboss / Emboss
+                  </label>
+                  <label style="font-size: 0.8125rem; display: flex; align-items: center; gap: 8px;">
+                    <input type="checkbox" name="tech" value="box"> Custom Rigid Box
+                  </label>
+                  <label style="font-size: 0.8125rem; display: flex; align-items: center; gap: 8px;">
+                    <input type="checkbox" name="tech" value="individual"> Name Personalization
+                  </label>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="project-notes">Project Specifications &amp; Requirements</label>
+                <textarea id="project-notes" name="notes" rows="4" class="form-textarea" placeholder="Provide any details regarding target in-hands event dates, Pantone color references, packaging instructions, or multi-drop delivery destinations..."></textarea>
+              </div>
+
+              <div style="display: flex; justify-content: flex-end; gap: 14px; margin-top: 28px;">
+                <button type="reset" class="btn btn-outline-gold">Reset Form</button>
+                <button type="submit" class="btn btn-gold" style="padding: 12px 28px;">
+                  Submit Request for Quotation &rarr;
+                </button>
+              </div>
+            </form>
+          </div>
+
+          <!-- Right: Trade Desk Credentials & Contact Info -->
+          <div>
+            <!-- Dossier Card -->
+            <div style="background-color: #0E131F; color: #FFFFFF; border-radius: var(--radius-lg); padding: 32px; border: 1px solid rgba(255, 255, 255, 0.12); margin-bottom: 24px;">
+              <div class="eyebrow eyebrow-light">SOURCING SLA</div>
+              <h3 class="font-serif" style="font-size: 1.5rem; color: #FFFFFF; margin-bottom: 16px;">
+                Guaranteed Response Protocol
+              </h3>
+              <p style="font-size: 0.875rem; line-height: 1.6; color: #94A3B8; margin-bottom: 24px;">
+                All institutional inquiries are assigned an executive sourcing analyst who manages factory vetting, digital proof generation, and Incoterm commercial proposals.
+              </p>
+
+              <div style="display: flex; flex-direction: column; gap: 14px; font-size: 0.8125rem;">
+                <div style="display: flex; align-items: center; gap: 10px;">
+                  <span style="color: var(--color-primary-gold);">&#10003;</span>
+                  <span><strong>24-Hour</strong> Initial Assessment &amp; Feasibility</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 10px;">
+                  <span style="color: var(--color-primary-gold);">&#10003;</span>
+                  <span><strong>48-Hour</strong> Digital Proofs &amp; Technical Drawings</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 10px;">
+                  <span style="color: var(--color-primary-gold);">&#10003;</span>
+                  <span>Physical Pre-Production Sample Express Dispatch</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 10px;">
+                  <span style="color: var(--color-primary-gold);">&#10003;</span>
+                  <span>Pre-Shipment SGS Batch Verification &amp; Inspection Pass</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Direct Contact Card -->
+            <div style="background: #FFFFFF; border: 1px solid var(--color-border); border-radius: var(--radius-lg); padding: 32px;">
+              <div class="eyebrow">DIRECT CONTACT</div>
+              <h4 class="font-serif" style="font-size: 1.25rem; color: var(--color-text-title); margin-bottom: 16px;">
+                Global Trade Desk
+              </h4>
+
+              <div style="display: flex; flex-direction: column; gap: 16px; font-size: 0.875rem; color: var(--color-text-body);">
+                <div style="display: flex; align-items: flex-start; gap: 12px;">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: var(--color-primary-gold); margin-top: 2px;">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                  </svg>
+                  <div>
+                    <div style="font-weight: 700; color: var(--color-text-title);">Telephone / WhatsApp</div>
+                    <div>[OFFICIAL PHONE]</div>
+                  </div>
+                </div>
+
+                <div style="display: flex; align-items: flex-start; gap: 12px;">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: var(--color-primary-gold); margin-top: 2px;">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                  <div>
+                    <div style="font-weight: 700; color: var(--color-text-title);">Trade Inquiries Email</div>
+                    <div>[OFFICIAL EMAIL]</div>
+                  </div>
+                </div>
+
+                <div style="display: flex; align-items: flex-start; gap: 12px;">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: var(--color-primary-gold); margin-top: 2px;">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                  <div>
+                    <div style="font-weight: 700; color: var(--color-text-title);">Registered Headquarters</div>
+                    <div>[OFFICIAL ADDRESS]</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Dark CTA Banner -->
+    <section class="cta-banner-section">
+      <div class="container cta-banner-content">
+        <div class="eyebrow eyebrow-light" style="justify-content: center;">READY TO ELEVATE YOUR SOURCING?</div>
+        <h2 class="section-headline text-white" style="margin-bottom: 16px;">
+          Looking for the Right Products for Your Business?
+        </h2>
+        <p class="section-desc" style="margin: 0 auto; color: #94A3B8;">
+          Partner with SAF International for dependable global sourcing, exquisite corporate gifting, and bespoke manufactured goods built to your specifications.
+        </p>
+
+        <div class="cta-banner-buttons">
+          <a href="products.html" class="btn btn-gold">Explore Products</a>
+          <a href="about.html" class="btn btn-outline-white">About SAF International</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div>
+          <h4 class="font-serif" style="font-size: 1.25rem; font-weight: 700; color: var(--color-text-title); margin-bottom: 12px;">
+            SAF International
+          </h4>
+          <p style="line-height: 1.6; color: var(--color-text-body); max-width: 260px;">
+            A global trading and sourcing company connecting businesses with gifts, corporate merchandise, stationery, household products, handicrafts, and lifestyle products.
+          </p>
+        </div>
+
+        <div>
+          <div class="footer-col-title">PRODUCTS</div>
+          <ul class="footer-links-list">
+            <li><a href="products.html?category=corporate-gifts">Corporate Gifts</a></li>
+            <li><a href="products.html?category=gift-items">Gift Items</a></li>
+            <li><a href="products.html?category=stationery">Stationery</a></li>
+            <li><a href="products.html?category=household">Household</a></li>
+            <li><a href="products.html?category=handicrafts">Handicrafts</a></li>
+            <li><a href="products.html?category=promotional-products">Promotional Products</a></li>
+            <li><a href="products.html?category=bags-accessories">Bags &amp; Accessories</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-col-title">BUSINESS &amp; SOURCING</div>
+          <ul class="footer-links-list">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="collections.html">Collections</a></li>
+            <li><a href="products.html?category=corporate-gifts">Corporate Gifts</a></li>
+            <li><a href="services.html#industries">Industries</a></li>
+            <li><a href="services.html#process">Sourcing Process</a></li>
+            <li><a href="about.html#news">News &amp; Insights</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-col-title">CLIENT SUPPORT</div>
+          <ul class="footer-links-list">
+            <li><a href="quote.html">Request a Quote</a></li>
+            <li><a href="quote.html#inquiry">Product Inquiry</a></li>
+            <li><a href="services.html#branding">Custom Branding</a></li>
+            <li><a href="about.html#faq">FAQ</a></li>
+            <li><a href="services.html#terms">Terms of Trade</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-col-title">OFFICIAL CREDENTIALS</div>
+          <div class="footer-credential-box">
+            <div class="footer-credential-label">CERTIFICATIONS</div>
+            <div class="footer-credential-val">[OFFICIAL CERTIFICATIONS]</div>
+          </div>
+          <div class="footer-credential-box">
+            <div class="footer-credential-label">INSTITUTIONAL PARTNERS</div>
+            <div class="footer-credential-val">[OFFICIAL PARTNERS]</div>
+          </div>
+          <div class="footer-credential-box">
+            <div class="footer-credential-label">HERITAGE</div>
+            <div class="footer-credential-val">Established [OFFICIAL FOUNDING YEAR]</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <div>&copy; 2026 SAF International. All Rights Reserved.</div>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <span>&bull;</span>
+          <a href="#">Terms &amp; Conditions</a>
+          <span>&bull;</span>
+          <a href="#">Sourcing Compliance</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/modal.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
