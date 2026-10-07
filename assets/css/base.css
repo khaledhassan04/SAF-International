@@ -1,0 +1,189 @@
+/* ==========================================================================
+   SAF INTERNATIONAL — BASE RESETS & TYPOGRAPHY
+   ========================================================================== */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--font-sans);
+  font-size: 0.9375rem; /* 15px */
+  line-height: 1.6;
+  color: var(--color-text-body);
+  background-color: var(--color-bg-body);
+  overflow-x: hidden;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+ul, ol {
+  list-style: none;
+}
+
+/* ==========================================================================
+   Typography Classes
+   ========================================================================== */
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--color-text-title);
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.font-serif {
+  font-family: var(--font-serif);
+}
+
+.font-sans {
+  font-family: var(--font-sans);
+}
+
+.text-gold {
+  color: var(--color-primary-gold);
+}
+
+.text-white {
+  color: #FFFFFF !important;
+}
+
+.text-muted {
+  color: var(--color-text-muted);
+}
+
+/* Section Eyebrow styling */
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-sans);
+  font-size: 0.6875rem; /* 11px */
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--color-primary-gold);
+  margin-bottom: 12px;
+}
+
+.eyebrow.eyebrow-pill {
+  background-color: var(--color-bg-pill);
+  padding: 6px 14px;
+  border-radius: var(--radius-full);
+}
+
+.eyebrow.eyebrow-pill::before {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  background-color: var(--color-primary-gold);
+  border-radius: 50%;
+}
+
+.eyebrow.eyebrow-light {
+  color: #DFCBA2;
+}
+
+.eyebrow.eyebrow-light::before {
+  background-color: #DFCBA2;
+}
+
+/* Section Headings */
+.section-headline {
+  font-family: var(--font-serif);
+  font-size: 2.25rem; /* 36px */
+  font-weight: 600;
+  line-height: 1.22;
+  color: var(--color-text-title);
+  letter-spacing: -0.01em;
+  margin-bottom: 14px;
+}
+
+@media (max-width: 768px) {
+  .section-headline {
+    font-size: 1.75rem;
+  }
+}
+
+.section-desc {
+  font-size: 0.9375rem;
+  color: var(--color-text-body);
+  max-width: 680px;
+  line-height: 1.65;
+}
+
+.section-header-wrap {
+  margin-bottom: 40px;
+}
+
+.section-header-flex {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 36px;
+}
+
+@media (max-width: 768px) {
+  .section-header-flex {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+/* Container */
+.container {
+  width: 100%;
+  max-width: var(--container-max);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--container-padding);
+  padding-right: var(--container-padding);
+}
+
+.section {
+  padding-top: var(--section-spacing);
+  padding-bottom: var(--section-spacing);
+  position: relative;
+}
+
+.section-sm {
+  padding-top: var(--section-spacing-sm);
+  padding-bottom: var(--section-spacing-sm);
+}
+
+/* Dividers */
+.divider {
+  height: 1px;
+  background-color: var(--color-border);
+  width: 100%;
+}

@@ -1,0 +1,68 @@
+/* ==========================================================================
+   SAF INTERNATIONAL TRADING & SOURCING — DESIGN SYSTEM VARIABLES
+   Pixel-Perfect Palette & Typography Tokens
+   ========================================================================== */
+
+:root {
+  /* Brand Color Palette sampled directly from source design */
+  --color-primary-gold: #7C5901;
+  --color-primary-gold-hover: #654900;
+  --color-primary-gold-active: #533B00;
+  --color-primary-gold-light: #F7F1E4;
+  --color-primary-gold-border: #DFCBA2;
+
+  /* Dark Midnight Navy (Used for Corporate Gifting & CTA sections) */
+  --color-dark-navy: #131B2E;
+  --color-dark-navy-deep: #0D1424;
+  --color-dark-navy-surface: #1C273F;
+  --color-dark-navy-border: rgba(255, 255, 255, 0.12);
+
+  /* Backgrounds & Neutrals */
+  --color-bg-body: #FAF8F5;
+  --color-bg-white: #FFFFFF;
+  --color-bg-sand: #F3EFEA;
+  --color-bg-stone: #EFEAE2;
+  --color-bg-pill: #ECE5DC;
+
+  /* Typography Colors */
+  --color-text-title: #111827;
+  --color-text-main: #2D3748;
+  --color-text-body: #4B5563;
+  --color-text-muted: #6B7280;
+  --color-text-light: #9CA3AF;
+  --color-text-gold: #7C5901;
+
+  /* Borders & Dividers */
+  --color-border: #E8E2D9;
+  --color-border-subtle: #F0EAE1;
+  --color-border-dark: #2A3650;
+
+  /* Typography Families */
+  --font-serif: 'Playfair Display', Georgia, Cambria, 'Times New Roman', serif;
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+  /* Container & Spacing */
+  --container-max: 1240px;
+  --container-padding: 24px;
+  --section-spacing: 96px;
+  --section-spacing-sm: 64px;
+
+  /* Border Radii */
+  --radius-xs: 3px;
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-full: 9999px;
+
+  /* Shadows */
+  --shadow-subtle: 0 1px 3px rgba(0, 0, 0, 0.05);
+  --shadow-card: 0 4px 14px rgba(0, 0, 0, 0.04);
+  --shadow-hover: 0 12px 28px rgba(0, 0, 0, 0.08);
+  --shadow-modal: 0 24px 60px rgba(10, 16, 28, 0.25);
+
+  /* Transitions */
+  --transition-fast: 0.15s ease;
+  --transition-normal: 0.25s ease;
+  --transition-smooth: 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
